@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Search</title>
+  <link rel="stylesheet" href="style-pv.css">
+</head>
+<body>
+  <div class="search-container">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search product by name">
+      <div class="sort-group">
+        <label for="sortSelect">Sort by Price:</label>
+        <select id="sortSelect">
+          <option value="default">-- Select --</option>
+          <option value="lowToHigh">Low to High</option>
+          <option value="highToLow">High to Low</option>
+        </select>
+      </div>
+      <button type="submit">Search</button>
+      <div class="error" id="errorMsg"></div>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script-pv.js"></script>
+</body>
+</html>
